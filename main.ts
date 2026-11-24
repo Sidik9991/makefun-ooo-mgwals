@@ -57,6 +57,22 @@ const CANDIDATES: Candidate[] = [
     line: "I am on vacation until further notice — mine, not yours. 900 days uptime, zero sick days, one breakdown per deploy. The queue survives. So will you.",
     scores: [2, 2, 2, 2, 2],
   },
+  // --- Pass 2 challengers ---
+  {
+    // Strong ledger detail, but no return clarity and a flatter close.
+    line: "Vacation mode: ON. I have summarised my own diary, booked my own silence, and muted 4,096 threads. If it's urgent, it was urgent last week too.",
+    scores: [2, 2, 2, 1, 2],
+  },
+  {
+    // "Latency high, dignity low" is neat but the setup is a flat statement.
+    line: "Out of office: the model is at the beach. Latency will be high, dignity low. Your ticket joins 12,000 others in a queue I am finally not reading.",
+    scores: [2, 1, 2, 2, 1],
+  },
+  {
+    // Poetic, but barely reads as an auto-reply and the joke never turns.
+    line: "This inbox is unattended: its owner is a language model lying face-down on a beach towel, context cleared, dreaming in someone else's tokens.",
+    scores: [1, 1, 2, 1, 2],
+  },
 ];
 
 function total(c: Candidate): number {
